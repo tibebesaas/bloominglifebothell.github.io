@@ -37,22 +37,45 @@
   <section class="contact-box">
     
     <h2>Contact Us</h2>
-    <!-- modify this form HTML and place wherever you want your form -->
+<!-- Contact Form Start -->
 <form
   action="https://formspree.io/f/mblybwgz"
   method="POST"
+  style="max-width: 500px; margin: 0 auto; padding: 1rem; border: 1px solid #ccc; border-radius: 8px; background: #f9f9f9;"
 >
-  <label>
-    Your email:
-    <input type="email" name="email">
+  <h2 style="text-align: center; margin-bottom: 1rem;">Contact Me</h2>
+
+  <label style="display: block; margin-bottom: 0.5rem;">
+    Your Email:
+    <input
+      type="email"
+      name="email"
+      required
+      style="width: 100%; padding: 0.5rem; margin-top: 0.25rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;"
+    >
   </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
+
+  <label style="display: block; margin-bottom: 0.5rem;">
+    Your Message:
+    <textarea
+      name="message"
+      required
+      rows="5"
+      style="width: 100%; padding: 0.5rem; margin-top: 0.25rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;"
+    ></textarea>
   </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+
+  <!-- You can add more input fields here -->
+
+  <button
+    type="submit"
+    style="display: block; width: 100%; padding: 0.75rem; background-color: #007BFF; color: white; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer;"
+  >
+    Send
+  </button>
 </form>
+<!-- Contact Form End -->
+
     <p><strong>Phone:</strong> (425) 298-8051</p>
     <p><strong>Email:</strong> <a href="mailto:bloominglifeafh@outlook.com">bloominglifeafh@outlook.com</a></p>
     <p><strong>Address:</strong> <a href="http://maps.google.com/?q=111 195th Pl SW, Bothell, WA 98012">111 195th Pl SW Bothell WA 98012</a></p>
