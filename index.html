@@ -92,12 +92,15 @@
     Send
   </button>
 </form>
-   <script>
+<script>
   const form = document.getElementById('contact-form');
   const status = document.getElementById('form-status');
+  const submitBtn = document.getElementById('submit-button');
 
   form.addEventListener('submit', async function (event) {
-    event.preventDefault(); // prevent default redirect
+    event.preventDefault(); // prevent default form submission
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
 
     const formData = new FormData(form);
 
@@ -122,7 +125,11 @@
       status.textContent = "❌ Error connecting to server.";
       status.style.color = "red";
     }
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Send";
   });
+</script>
 </script>
 <!-- Contact Form End -->
 
