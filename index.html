@@ -28,7 +28,17 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     vertical-align: bottom;
-}
+    }
+    * {
+    box-sizing: border-box;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      max-width: 100%;
+    }
+
 
   </style>
  
@@ -73,7 +83,7 @@
       type="text"
       name="name"
       required
-      style="width: 100%; padding: 0.5rem; margin-top: 0.25rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;"
+      style="max-width: 100%; width: 100%; padding: 0.5rem; margin-top: 0.25rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;"
     >
   </label>
   <label style="display: block; margin-bottom: 0.5rem;">
@@ -82,7 +92,7 @@
       type="email"
       name="email"
       required
-      style="width: 100%; padding: 0.5rem; margin-top: 0.25rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;"
+      style="max-width: 100%; width: 100%; padding: 0.5rem; margin-top: 0.25rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;"
     >
   </label>
 
@@ -92,7 +102,7 @@
       name="message"
       required
       rows="5"
-      style="width: 100%; padding: 0.5rem; margin-top: 0.25rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;"
+      style="max-width: 100%; width: 100%; padding: 0.5rem; margin-top: 0.25rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;"
     ></textarea>
   </label>
 
@@ -102,7 +112,7 @@
       type="tel"
       name="phone"
       pattern="[0-9+\-\s()]*"
-      style="width: 100%; padding: 0.5rem; margin-top: 0.25rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;"
+      style="max-width: 100%; width: 100%; padding: 0.5rem; margin-top: 0.25rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;"
     >
   </label>
 
