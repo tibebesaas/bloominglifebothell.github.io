@@ -85,12 +85,15 @@
 
   <!-- You can add more input fields here -->
 
-  <button
+ <button
+    id="submit-button"
     type="submit"
-    style="display: block; width: 100%; padding: 0.75rem; background-color: #007BFF; color: white; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer;"
+    style="padding: 0.75rem 1.5rem; background-color: #007BFF; color: white; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer;"
   >
     Send
   </button>
+
+  <p id="form-status" style="margin-top: 1rem; font-weight: bold;"></p>
 </form>
 <script>
   const form = document.getElementById('contact-form');
