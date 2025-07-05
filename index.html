@@ -41,12 +41,30 @@
     box-sizing: border-box;
     }
 
-    input,
+/*     input,
     textarea {
       width: 100%;
       max-width: 100%;
-    }
+    } */
+  input, textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid #638C1C;         /* green border */
+    border-radius: 4px;
+    color: #333;                       /* text color */
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
 
+input:focus, textarea:focus {
+  border-color: #4CAF50;            /* brighter green on focus */
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.3); /* soft glow */
+}
 
   </style>
  
