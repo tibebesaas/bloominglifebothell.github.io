@@ -71,6 +71,32 @@ input:focus, textarea:focus {
   box-shadow: 0 0 4px rgba(99, 140, 28, 0.4);
   outline: none;
 }
+.slideshow-container {
+  background-color: #638C1C;
+  padding: 2rem 1rem;
+}
+
+.slideshow {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
 
   </style>
  
@@ -209,6 +235,25 @@ input:focus, textarea:focus {
     submitBtn.textContent = "Send";
   });
 </script>
+   <script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide");
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  showSlide(currentSlide);
+  setInterval(nextSlide, 3000); // change slide every 3 seconds
+</script>
+
 </script>
 <!-- Contact Form End -->
 
